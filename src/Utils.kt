@@ -8,6 +8,8 @@ import kotlin.io.path.readText
  */
 fun readInput(name: String) = Path("src/$name.txt").readText().trim().lines()
 
+fun readInputNoTrim(name: String) = Path("src/$name.txt").readText().lines()
+
 /**
  * Converts string to md5 hash.
  */
